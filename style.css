@@ -1,0 +1,343 @@
+/* Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Variables  */
+:root{
+    --principal-color: #E33B38;
+    --secondary-color: rgb(240, 240, 240);
+    --text-color: #1c1c1c;
+    
+}
+::selection{
+    color: var(--secondary-color);
+    background-color: var(--principal-color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+/*Header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+header.shadow{
+    background-color: white;
+    transition: 0.4s;
+    box-shadow: 0 1px 4px hsl(0, 4%, 14% / 10%);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.logo{
+    width: 8rem;
+}
+.whatsapp{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
+    font-weight: 500;
+    border-radius: 4px;
+}
+.whatsapp:hover{
+    background-color: #fb004f;
+    transition: all ease-in-out 0.3s;
+}
+/*Home*/
+.home{
+    width: 100%;
+    min-height: 440px;
+    background-image: url("Resourses/background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.home-text{
+    color: var(--secondary-color);
+    text-align: center;
+}
+.home-title{
+    font-size: 4rem;
+    padding: .5rem;
+}
+.home-subtitle{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+/*Post filter*/
+.post-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+.filter-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.active-filter{
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+/*Product*/
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+}
+.product-box{
+    background-color: white;
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: .5rem;
+}
+.product-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem;
+}
+.category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--principal-color);
+}
+.product-title{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.product-description{
+    font-size: 0.6rem;
+    line-height: 1rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.product-price{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.product-btn{
+    padding: 5px 18px;
+    text-transform: uppercase;
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    background-color: var(--principal-color);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.column-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.column{
+   display: flex;
+   flex-direction: column;
+   margin: 0 5rem;
+}
+.column h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+.column a{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0;
+    color: white;
+}
+.derechos{
+    color: white;
+}
+
+/*Product Page descrption*/
+.producto{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+.imagen-producto{
+    width: 500px;
+}
+.titulo-producto{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.precio{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.descripcion{
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+/*Caja*/
+.caja{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.caja p{
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+.caja img{
+    width: 70%;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+/* Resposive */
+@media (max-width: 1186px){
+    .nav {
+        padding: 18px 25px;
+    }
+    .container {
+        max-width: 833px;
+    }
+}
+
+@media (max-width: 949px){
+    .container {
+        max-width: 585px;
+    }
+    .home-subtitle {
+        line-height: 3rem;
+    }
+    .home-subtitle {
+        font-size: 1rem;
+    }
+    .filter-item {
+        font-size: 0.5rem;
+    }
+    .post-filter {
+        column-gap: 0.3rem;
+    }
+    .producto{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 708px){
+    .column a {
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        margin: 5px 0;
+        color: white;
+    }
+    .home-title {
+        font-size: 3rem;
+    }
+    
+}
+
+
+@media (max-width: 655px){
+    .filter-item {
+        font-size: 0.4rem;
+    }    
+    .post-filter {
+        column-gap: 1.2rem;
+    }
+    .container {
+        max-width: 411px;
+    }
+    .product-img{
+      height: 200px;
+    }
+    .product-box{
+      width: 300px;
+    }
+}
+
+@media (max-width: 540px){
+    .column h3 {
+        font-size: .8rem;
+        font-weight: 600;
+        color: white;
+    }
+    .derechos {
+        font-size: .8rem;
+    }
+    .column-container {
+        flex-direction: column;
+    }
+    .footer {
+        align-items: center;
+        height: 457px;
+    }
+}
+
+
+
+
+
